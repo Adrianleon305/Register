@@ -1,0 +1,107 @@
+
+
+
+
+/* Estilos de diseño con transiciones */
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #materiaForm,
+  #formulariosTexto,
+  #exportarForm {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(64, 56, 56, 0);
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  #materiaForm h2,
+  #formulariosTexto h2,
+  #exportarForm h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  #exportarForm h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  select,
+  input[type="text"],
+  button {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  button {
+    font-size: 18px;
+    background-color: #f7137e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+
+    background-color: #00d99f;
+  }
+  
+  a {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+
+  .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+
+
+.texto {
+font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+
+h5 {
+  text-align:center ;
+  color: #ffffff;
+  font-size: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+
+
+<title>Orden de tareas</title>
+</head>
+
+
+
+
+
+<body>
+
+
+    <div class="gradient">
+
+
+
+    <div class="logo-container">
+        <img src="L1.png" class="logo" alt="">
+</div>
+
+<div id="container">
+
+
+
+
+<div id="materiaForm" class="form-box">
+                                                        <h2>Selecciona una materia:</h2>
+<select id="materia">
+        <option value="Español">Español</option>
+        <option value="MatemAticas">Matemáticas</option>
+        <option value="CIvica">Cívica</option>
+        <option value="QuImica">Química</option>
+        <option value="Historia">Historia</option>
+        <option value="TutorIa">Tutoría</option>
+        <option value="ingles">Inglés</option>
+</select>
+
+
+
+
+<div class="connector"></div>
+<button onclick="mostrarFormularioTexto()">Siguiente</button>
+</div>
+
+
+
+<div id="formulariosTexto" class="form-box" style="display: none;">
+                                                        <h2>Ingresa la información de la actividad</h2>
+<form id="infoForm">
+        <label class="texto" for="nombre">Nombre de la Actividad:</label>
+        <input type="text" id="nombre" required><br>
+        <label class="texto" for="atv">Número de Actividad</label>
+        <input type="text" id="no" required><br>
+        <label class="texto" for="realizacion">Fecha de Realización:</label>
+        <input type="text" id="realizacion" required><br>
+        <label class="texto" for="entrega">Fecha de Entrega:</label>
+        <input type="text" id="entrega" required><br>
+        <label class="texto" for="calificacion">Calificación de la actividad:</label>
+        <input type="text" id="calificacion" required><br>
+        <label class="texto" for="Descripcion">Pequeña descripción de la actividad:</label>
+        <input type="text" id="Descripcion" required><br>
+        <br>
+
+        <div class="connector"></div>
+        <button class="boton" type="button" onclick="mostrarFormularioExportar()">Guardar</button>
+</form>
+<h5>Favor de no usar tildes (acentos) en los campos de texto</h5>
+</div>
+
+
+
+
+
+<div id="exportarForm" class="form-box" style="display: none;">
+                                                        <h2>Exportar a archivo de texto:</h2>
+<button onclick="exportarDatos()">Exportar</button>
+
+</div>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
